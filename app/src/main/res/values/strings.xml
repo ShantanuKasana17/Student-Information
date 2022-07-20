@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">studentinformation</string>
+    <string name="student_information_system">Student Information System</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_registration_no">Student Registration No.</string>
+    <string name="first_name">first_name</string>
+    <string name="middle_name" />
+    <string name="last_name" />
+    <string name="submit">Submit</string>
+</resources>
