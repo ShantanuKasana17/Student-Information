@@ -190,6 +190,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginStart="72dp"
@@ -230,6 +231,16 @@
             app:layout_constraintTop_toTopOf="@+id/gender"
             tools:ignore="MissingConstraints" />
 
-
+        <TextView
+            android:id="@+id/cred"
+            android:layout_width="261dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="64dp"
+            android:ems="25"
+            android:text="Made by Devesh Jain"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
