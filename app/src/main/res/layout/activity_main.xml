@@ -190,7 +190,6 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginStart="72dp"
@@ -198,38 +197,43 @@
             android:text="@string/submit"
             app:layout_constraintStart_toStartOf="@+id/editTextTextMail"
             app:layout_constraintTop_toTopOf="@+id/editTextTextMail"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            android:id="@+id/submit">
 
         </Button>
 
-        <RadioButton
-            android:id="@+id/radioFemale"
-            android:layout_width="112dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="36dp"
-            android:checked="false"
-            android:text="   Female"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="@+id/gender"
-            app:layout_constraintTop_toTopOf="@+id/gender"
-            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
 
-        <RadioButton
-            android:id="@+id/radioMale"
-            android:layout_width="84dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="71dp"
-            android:checked="false"
-            android:text="  Male"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toStartOf="@+id/radioFemale"
-            app:layout_constraintHorizontal_bias="0.016"
-            app:layout_constraintStart_toStartOf="@+id/gender"
-            app:layout_constraintTop_toTopOf="@+id/gender"
-            tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="390dp"
+                    android:padding="10dp"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="10dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/cred"
@@ -241,6 +245,6 @@
             android:text="Made by Devesh Jain"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/button" />
+            app:layout_constraintTop_toTopOf="@+id/submit" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
