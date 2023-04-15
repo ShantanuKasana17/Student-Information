@@ -5,7 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-//Made by Devesh Jain 20BCE10613
+//Made by Shantanu kasana 20BCE10557
+    //DESIGNED BY DEVESH JAIN
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
